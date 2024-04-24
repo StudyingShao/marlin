@@ -75,7 +75,7 @@ For running quantization script one also needs:
 If all requirements are met, it should be possible to install Marlin by calling
 
 ```
-pip install .
+pip install -e .
 ```
 
 in the root folder of this repository.

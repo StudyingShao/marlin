@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+// nvcc --generate-dependencies-with-compile --dependency-output /TRT_STUDY/jinshik_TRT_LLM/tests/quantization/marlin/build/temp.linux-x86_64-3.10/marlin/marlin_cuda_kernel.o.d -I/usr/local/lib/python3.10/dist-packages/torch/include -I/usr/local/lib/python3.10/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/lib/python3.10/dist-packages/torch/include/TH -I/usr/local/lib/python3.10/dist-packages/torch/include/THC -I/usr/local/cuda/include -I/usr/include/python3.10 -c -c /TRT_STUDY/jinshik_TRT_LLM/tests/quantization/marlin/marlin/marlin_cuda_kernel.cu -o /TRT_STUDY/jinshik_TRT_LLM/tests/quantization/marlin/build/temp.linux-x86_64-3.10/marlin/marlin_cuda_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=marlin_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+
 
 #ifndef MARLIN_CUDA_KERNEL_CUH
 #define MARLIN_CUDA_KERNEL_CUH
